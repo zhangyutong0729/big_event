@@ -1,0 +1,30 @@
+day11：
+一：插件
+layui：页面布局
+cropper：图片裁剪插件
+tinymce：富文本编辑
+二、每天上传本地代码到github
+三、登录注册功能
+	1、设置网络协议打开页面
+		安装live server插件
+		开启live server插件--vscode右下角
+	          右键--open with live server打开页面
+	2、使用github管理项目
+		右键资源管理器--在集成终端中打开
+		创建本地仓库---关联上传到github中
+		github新的仓库，关联新仓库和本地仓库
+		创建本地分支--切换到login分支上
+	3、登陆页面：
+		3.1 页面结构：layui
+		   在assets文件夹中创建login.css文件
+		   根路径查找文件：我们项目的起始文件夹 /
+		CSS 设置html body全屏---背景
+		layui-基础说明-页面元素-公共基础类
+		
+		3.2 login和reg
+		         区域盒子水平居中
+		3.3 标题
+		3.4 登录和注册(默认隐藏)盒子 超链接
+		3.5 点击a切换登录注册功能---JQ点击事件  show hide
+		3.6 表单盒子---layui--页面元素--表单
+		3.7 小图标：layui---CSS--定位 父相子绝

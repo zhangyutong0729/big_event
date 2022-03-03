@@ -1,0 +1,15 @@
+首页功能：
+一：页面结构及iframe标签：
+	页面结构：layui
+二：获取用户信息： ajax发起get请求，添加headers：{Authorization:localStorage.getItem('token') || ''}
+		返回值res中的data数据
+		如果成功调用渲染用户头像函数，参数为res.data
+三：渲染用户头像：	var name = data.nickname || data.username
+		判断数据是否有图片路径
+		如果有，把路径传给img并且让文字头像隐藏，图片头像显示
+		否则，显示文字头像并且把用户名的第一个字母name[0] 做为头像（span）的内容
+四：退出功能：         点击弹窗，提示是否退出，点取消没有效果
+		点确定返回登陆页面 login
+		到layui的内置模块--弹出层--中找confirm
+五：权限管理：         commplete方法，通过返回值判断，如果返回的验证失败，直接跳转到login.html并且删除本地token
+		权限管理优化：baseAPI.js
